@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects — Bircan Pişkin Architecture</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f7f5;
+            color: #111;
+            font-family: "Inter", Arial, sans-serif;
+            font-weight: 300;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 28px 42px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            background: #f7f7f5;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 13px;
+            line-height: 1.25;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        nav a {
+            color: #111;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+        }
+
+        nav a:hover {
+            opacity: .45;
+        }
+
+        main {
+            padding: 150px 42px 120px;
+        }
+
+        .page-title {
+            font-size: clamp(60px, 11vw, 180px);
+            line-height: .82;
+            letter-spacing: -.065em;
+            text-transform: uppercase;
+            margin-bottom: 130px;
+        }
+
+        .project {
+            border-top: 1px solid #111;
+
+            padding: 20px 0 100px;
+
+            display: grid;
+            grid-template-columns: 90px 1fr 1fr 60px;
+
+            text-decoration: none;
+            color: #111;
+
+            transition: opacity .3s ease;
+        }
+
+        .project:hover {
+            opacity: .55;
+        }
+
+        .number {
+            font-size: 12px;
+        }
+
+        .project-name {
+            font-size: clamp(22px, 3vw, 42px);
+            line-height: 1;
+            letter-spacing: -.035em;
+        }
+
+        .project-info {
+            font-size: 11px;
+            line-height: 1.7;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        .arrow {
+            font-size: 20px;
+            text-align: right;
+        }
+
+        footer {
+            padding: 40px 42px 30px;
+            border-top: 1px solid #111;
+
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        footer a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 22px;
+            }
+
+            nav {
+                gap: 15px;
+            }
+
+            main {
+                padding: 130px 22px 80px;
+            }
+
+            .page-title {
+                margin-bottom: 80px;
+            }
+
+            .project {
+                grid-template-columns: 45px 1fr 25px;
+                gap: 10px;
+                padding-bottom: 60px;
+            }
+
+            .project-info {
+                grid-column: 2;
+                margin-top: 15px;
+            }
+
+            .arrow {
+                grid-column: 3;
+                grid-row: 1;
+            }
+
+            footer {
+                padding: 30px 22px;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        Bircan Pişkin<br>
+        Architecture
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h1 class="page-title">
+        Projects
+    </h1>
+
+
+    <a class="project" href="#life-bakirkoy">
+
+        <div class="number">
+            01
+        </div>
+
+        <div class="project-name">
+            Life Bakırköy<br>
+            Social Housing
+        </div>
+
+        <div class="project-info">
+            Residential<br>
+            Bakırköy / Istanbul<br>
+            2023
+        </div>
+
+        <div class="arrow">
+            ↗
+        </div>
+
+    </a>
+
+
+    <a class="project" href="#mersin">
+
+        <div class="number">
+            02
+        </div>
+
+        <div class="project-name">
+            Mersin<br>
+            Housing Project
+        </div>
+
+        <div class="project-info">
+            Residential<br>
+            Tarsus / Mersin<br>
+            2024
+        </div>
+
+        <div class="arrow">
+            ↗
+        </div>
+
+    </a>
+
+
+    <a class="project" href="#halic">
+
+        <div class="number">
+            03
+        </div>
+
+        <div class="project-name">
+            Haliç Industrial<br>
+            Art Center
+        </div>
+
+        <div class="project-info">
+            Cultural / Industrial<br>
+            Kağıthane / Istanbul<br>
+            2023
+        </div>
+
+        <div class="arrow">
+            ↗
+        </div>
+
+    </a>
+
+
+    <a class="project" href="#portal-merter">
+
+        <div class="number">
+            04
+        </div>
+
+        <div class="project-name">
+            Portal Merter<br>
+            Commercial
+        </div>
+
+        <div class="project-info">
+            Commercial<br>
+            Güngören / Istanbul<br>
+            2026
+        </div>
+
+        <div class="arrow">
+            ↗
+        </div>
+
+    </a>
+
+
+</main>
+
+
+<footer>
+
+    <div>
+        © 2026 Bircan Pişkin Architecture
+    </div>
+
+    <div>
+        Istanbul / Türkiye
+    </div>
+
+    <div>
+        <a href="index.html">Back to Home ↑</a>
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
